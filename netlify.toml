@@ -4,3 +4,8 @@
 
 [functions]
   directory = "netlify/functions"
+
+[[redirects]]
+  from = "/about"
+  to = "/site/about/page"
+  status = 200
