@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@auth/prisma-adapter": "^1.5.0",
+    "@netlify/next": "^1.4.9",
     "@prisma/client": "^5.11.0",
     "axios": "^1.6.2",
     "bcrypt": "^5.0.1",
