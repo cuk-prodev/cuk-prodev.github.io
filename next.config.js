@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/cuk-prodev',
-  assetPrefix: '/'
+  assetPrefix: '/cuk-prodev'
 };
 
 module.exports = nextConfig;
