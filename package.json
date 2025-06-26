@@ -3,11 +3,10 @@
   "version": "2.2.0",
   "private": true,
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "deploy": "npm run build && gh-pages -d out"
-},
-
+    "build": "next build",
+    "postbuild": "powershell -Command \"New-Item -Path out\\\\.nojekyll -ItemType File -Force\"",
+    "deploy": "npm run build && npm run postbuild && gh-pages -d out --dotfiles"
+  },
   "dependencies": {
     "@auth/prisma-adapter": "^1.5.0",
     "@netlify/next": "^1.4.9",

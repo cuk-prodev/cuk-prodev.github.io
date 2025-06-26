@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   output: 'export',
-  // jika mau ganti folder default dari `out/`:
-  // distDir: 'out',
+  images: { unoptimized: true },
 }
-module.exports = nextConfig
