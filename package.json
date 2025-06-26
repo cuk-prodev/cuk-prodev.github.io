@@ -2,7 +2,6 @@
   "name": "play-nextjs",
   "version": "2.2.0",
   "private": true,
-  "homepage": "https://cuk-prodev.github.io/cuk-prodev",
 "scripts": {
   "build": "next build",
   "deploy": "npm run build && gh-pages -d out"
