@@ -6,6 +6,36 @@
   directory = "netlify/functions"
 
 [[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
   from = "/about"
   to = "/site/about/page"
+  status = 200
+
+[[redirects]]
+  from = "/pricing"
+  to = "/site/pricing/page"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/site/contact/page"
+  status = 200
+
+[[redirects]]
+  from = "/blog"
+  to = "/site/blog/page"
+  status = 200
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/site/blog/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
   status = 200

@@ -1,14 +1,11 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   // Hapus `output: 'export'`
-//   images: { unoptimized: true } // kalau perlu, atau bisa dihapus juga
-// };
-
-// module.exports = nextConfig;
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  output: 'export',
+  images: {
+    unoptimized: true, 
+  },
+  basePath: '/cuk-prodev', 
+  assetPrefix: '/cuk-prodev'
 };
 
 module.exports = nextConfig;
