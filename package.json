@@ -5,9 +5,8 @@
 "homepage": "https://cuk-prodev.github.io/cuk-prodev",
 "scripts": {
   "dev": "next dev",
-  "build": "next build",
-  "deploy": "gh-pages -d out"
-},  
+  "build": "next build"
+  },
   "dependencies": {
     "@auth/prisma-adapter": "^1.5.0",
     "@netlify/next": "^1.4.9",
