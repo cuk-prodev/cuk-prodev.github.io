@@ -1,14 +1,7 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   // Hapus `output: 'export'`
-//   images: { unoptimized: true } // kalau perlu, atau bisa dihapus juga
-// };
-
-// module.exports = nextConfig;
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-};
-
-module.exports = nextConfig;
+  output: 'export',
+  // jika mau ganti folder default dari `out/`:
+  // distDir: 'out',
+}
+module.exports = nextConfig
