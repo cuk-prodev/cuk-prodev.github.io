@@ -3,10 +3,10 @@
   "version": "2.2.0",
   "private": true,
   "homepage": "https://cuk-prodev.github.io/cuk-prodev",
-  "scripts": {
-  "dev": "next dev",
-  "build": "next build"
-},  
+"scripts": {
+  "build": "next build",
+  "deploy": "npm run build && gh-pages -d out"
+},
 
   "dependencies": {
     "@auth/prisma-adapter": "^1.5.0",
