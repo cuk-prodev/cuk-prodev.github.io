@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/cuk-prodev',
-  assetPrefix: '/cuk-prodev/',
+  // basePath: '/',
+  // assetPrefix: '',
 };
 
 module.exports = nextConfig;
