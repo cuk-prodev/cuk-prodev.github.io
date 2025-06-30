@@ -2,11 +2,11 @@
   "name": "play-nextjs",
   "version": "2.2.0",
   "private": true,
-"homepage": "https://cuk-prodev.github.io/cuk-prodev",
-"scripts": {
+ "scripts": {
   "dev": "next dev",
-  "build": "next build"
-  },
+  "build": "next build",
+  "deploy": "npm run build"
+},
   "dependencies": {
     "@auth/prisma-adapter": "^1.5.0",
     "@netlify/next": "^1.4.9",
