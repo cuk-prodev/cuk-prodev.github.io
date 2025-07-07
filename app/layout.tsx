@@ -23,6 +23,11 @@ export default function RootLayout({
 
   return (
     <html suppressHydrationWarning={true} className="!scroll-smooth" lang="en">
+      <meta name="google-site-verification" content="NCNiHtize2Ll5bxpGesyEebKLH5TgTaP-gE5IDGNL8M" />
+      <meta name="google-site-verification" content="NCNiHtize2Ll5bxpGesyEebKLH5TgTaP-gE5IDGNL8M" />
+      <meta name="description" content="CUK PRODEV menyediakan jasa pembuatan website, aplikasi Android, dan sistem digital seperti absensi, booking room, dan dashboard IoT." />
+      <meta name="keywords" content="jasa pembuatan website, jasa pembuatan aplikasi Android, jasa website murah, freelancer IT, jasa pembuatan sistem absensi, jasa aplikasi IoT, web developer Jakarta, jasa React Native, developer GitHub Pages, jasa dashboard admin, jasa integrasi API, programmer freelance" />
+      <meta name="author" content="CUK PRODEV" />
       {/*
         <head /> will contain the components returned by the nearest parent
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
