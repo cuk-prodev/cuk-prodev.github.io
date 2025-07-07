@@ -1,1 +1,1 @@
-vercel --prod
+git push -f origin gh-pages

@@ -16,7 +16,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/web',
+  // basePath: '/web',
   images: {
     unoptimized: true
   }
