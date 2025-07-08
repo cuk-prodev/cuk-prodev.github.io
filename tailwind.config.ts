@@ -12,7 +12,12 @@ const config: Config = {
     extend: {
       colors: {
         ...colors,
-        // primary: "#1A202C",
+        animation: {
+          'spin-slow': 'spin 2.5s linear infinite',
+        },
+        backgroundImage: {
+          'grid-pattern': "repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0, rgba(255,255,255,0.05) 1px, transparent 1px, transparent 20px)",
+        },
       },
     },
   },
