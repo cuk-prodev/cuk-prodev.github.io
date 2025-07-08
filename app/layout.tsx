@@ -23,6 +23,7 @@ export default function RootLayout({
 
   return (
     <html suppressHydrationWarning={true} className="!scroll-smooth" lang="en">
+      <title>CUK PRODEV - Jasa Website, Aplikasi, Sistem Digital</title>
       <meta name="google-site-verification" content="NCNiHtize2Ll5bxpGesyEebKLH5TgTaP-gE5IDGNL8M" />
       <meta name="google-site-verification" content="NCNiHtize2Ll5bxpGesyEebKLH5TgTaP-gE5IDGNL8M" />
       <meta name="description" content="CUK PRODEV menyediakan jasa pembuatan website, aplikasi Android, dan sistem digital seperti absensi, booking room, dan dashboard IoT." />
