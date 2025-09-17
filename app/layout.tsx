@@ -9,6 +9,8 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import PreLoader from "../components/Common/PreLoader";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default function RootLayout({
   children,

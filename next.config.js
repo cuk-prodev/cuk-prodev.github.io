@@ -10,16 +10,21 @@
 // };
 
 // module.exports = nextConfig;
-
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   images: {
-    unoptimized: true // wajib untuk GitHub Pages
-  }
-}
+    unoptimized: true, // wajib untuk GitHub Pages
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.jsdelivr.net",
+      },
+      // tambahkan host lain di sini bila perlu
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
 
 
