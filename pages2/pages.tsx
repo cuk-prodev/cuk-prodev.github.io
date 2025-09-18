@@ -6,6 +6,7 @@ import ScrollUp from "../components/Common/ScrollUp";
 import Contact from "../components/Contact";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
+import ProductsPage from "@/components/Products";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Hero />
         <Features />
         <About />
+        <ProductsPage />
         <Contact />
       </main>
     </>
