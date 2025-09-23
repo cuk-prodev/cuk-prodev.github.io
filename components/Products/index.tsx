@@ -7,8 +7,14 @@ const products = [
   { id: 2, image: "/images/market.png", title: "Marketplace App", desc: "An elegant marketplace application with sleek UI." },
   { id: 3, image: "/images/kasir.png", title: "POS System", desc: "A powerful cashier system for your business." },
   { id: 4, image: "/images/g-ride.png", title: "G-Ride", desc: "An efficient and reliable transportation app." },
-  { id: 5, image: "/images/inventory.png", title: "Inventory Manager", desc: "Smart stock management with modern technology." },
-  { id: 6, image: "/images/parkir.png", title: "Smart Parking", desc: "A complete smart parking solution for enterprises." },
+  // { id: 5, image: "/images/inventory.png", title: "Inventory Manager", desc: "Smart stock management with modern technology." },
+  { id: 5, image: "/images/parkir.png", title: "Smart Parking", desc: "A complete smart parking solution for enterprises." },
+  { 
+    id: 6, 
+    image: "/images/tour.png", 
+    title: "Travel APP", 
+    desc: "Choose your destination easily for intercity trips, instant voice translation for different languages." 
+  },
 ];
 
 const ProductsPage = () => {
