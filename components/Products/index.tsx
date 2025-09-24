@@ -2,20 +2,36 @@
 import { useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
+// const products = [
+//   { id: 1, image: "/images/medsos.png", title: "Social Media App", desc: "A modern social platform for digital interaction." },
+//   { id: 2, image: "/images/market.png", title: "Marketplace App", desc: "An elegant marketplace application with sleek UI." },
+//   { id: 3, image: "/images/kasir.png", title: "POS System", desc: "A powerful cashier system for your business." },
+//   { id: 4, image: "/images/g-ride.png", title: "G-Ride", desc: "An efficient and reliable transportation app." },
+//   // { id: 5, image: "/images/inventory.png", title: "Inventory Manager", desc: "Smart stock management with modern technology." },
+//   { id: 5, image: "/images/parkir.png", title: "Smart Parking", desc: "A complete smart parking solution for enterprises." },
+//   { 
+//     id: 6, 
+//     image: "/images/tour.png", 
+//     title: "Travel APP", 
+//     desc: "Choose your destination easily for intercity trips, instant voice translation for different languages." 
+//   },
+// ];
+
 const products = [
   { id: 1, image: "/images/medsos.png", title: "Social Media App", desc: "A modern social platform for digital interaction." },
   { id: 2, image: "/images/market.png", title: "Marketplace App", desc: "An elegant marketplace application with sleek UI." },
   { id: 3, image: "/images/kasir.png", title: "POS System", desc: "A powerful cashier system for your business." },
   { id: 4, image: "/images/g-ride.png", title: "G-Ride", desc: "An efficient and reliable transportation app." },
-  // { id: 5, image: "/images/inventory.png", title: "Inventory Manager", desc: "Smart stock management with modern technology." },
   { id: 5, image: "/images/parkir.png", title: "Smart Parking", desc: "A complete smart parking solution for enterprises." },
-  { 
-    id: 6, 
-    image: "/images/tour.png", 
-    title: "Travel APP", 
-    desc: "Choose your destination easily for intercity trips, instant voice translation for different languages." 
-  },
+  { id: 6, image: "/images/tour.png", title: "Travel APP", desc: "Choose your destination easily for intercity trips, instant voice translation for different languages." },
+  { id: 7, image: "/images/sanjaya.png", title: "Booking System", desc: "Real estate website showcasing properties, clients, and successful projects." },
+  { id: 8, image: "/images/hris_dashboard.png", title: "HRIS Dashboard", desc: "Comprehensive HR dashboard to manage employee data, payroll, and attendance." },
+  { id: 9, image: "/images/damia.png", title: "Attendance Report HRIS", desc: "A modern system for managing and tracking employee attendance." },
+  { id: 10, image: "/images/hris.png", title: "HRIS Login", desc: "Secure HRIS login system for employees and administrators." },
+  { id: 11, image: "/images/barugasikola.png", title: "E-Learning Baruga", desc: "An online learning platform for teachers and students, supported by Balai Pustaka." },
+  { id: 12, image: "/images/kingfruit.png", title: "King of The King Marketplace", desc: "Premium durian product website with elegant branding marketplace." },
 ];
+
 
 const ProductsPage = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
