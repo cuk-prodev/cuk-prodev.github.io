@@ -1,21 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-
-// const products = [
-//   { id: 1, image: "/images/medsos.png", title: "Social Media App", desc: "A modern social platform for digital interaction." },
-//   { id: 2, image: "/images/market.png", title: "Marketplace App", desc: "An elegant marketplace application with sleek UI." },
-//   { id: 3, image: "/images/kasir.png", title: "POS System", desc: "A powerful cashier system for your business." },
-//   { id: 4, image: "/images/g-ride.png", title: "G-Ride", desc: "An efficient and reliable transportation app." },
-//   // { id: 5, image: "/images/inventory.png", title: "Inventory Manager", desc: "Smart stock management with modern technology." },
-//   { id: 5, image: "/images/parkir.png", title: "Smart Parking", desc: "A complete smart parking solution for enterprises." },
-//   { 
-//     id: 6, 
-//     image: "/images/tour.png", 
-//     title: "Travel APP", 
-//     desc: "Choose your destination easily for intercity trips, instant voice translation for different languages." 
-//   },
-// ];
 
 const products = [
   { id: 1, image: "/images/medsos.png", title: "Social Media App", desc: "A modern social platform for digital interaction." },
@@ -30,11 +15,25 @@ const products = [
   { id: 10, image: "/images/hris.png", title: "HRIS Login", desc: "Secure HRIS login system for employees and administrators." },
   { id: 11, image: "/images/barugasikola.png", title: "E-Learning Baruga", desc: "An online learning platform for teachers and students, supported by Balai Pustaka." },
   { id: 12, image: "/images/kingfruit.png", title: "King of The King Marketplace", desc: "Premium durian product website with elegant branding marketplace." },
+  { id: 13, image: "/images/server-monitoring.png", title: "Server Monitoring", desc: "Realtime server performance and uptime monitoring dashboard." },
+  { id: 14, image: "/images/grup-rumah-makan-monitoring.png", title: "Restaurant Group Monitoring", desc: "Revenue, performance, and outlet monitoring for restaurant groups." },
+  { id: 15, image: "/images/grup-toko-monitoring.png", title: "Retail Store Monitoring", desc: "Comprehensive monitoring system for retail stores and franchises." },
 ];
-
 
 const ProductsPage = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [isPageLoaded, setIsPageLoaded] = useState(false);
+
+  useEffect(() => {
+    // tandai kalo page udah selesai load
+    const handleLoad = () => setIsPageLoaded(true);
+    if (document.readyState === "complete") {
+      setIsPageLoaded(true);
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
 
   const handleNext = () => {
     if (selectedIndex !== null) {
@@ -63,11 +62,16 @@ const ProductsPage = () => {
               className="relative bg-white/80 dark:bg-gray-800/60 backdrop-blur-lg rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl cursor-pointer"
               onClick={() => setSelectedIndex(index)}
             >
-              <img
-                src={p.image}
-                alt={p.title}
-                className="w-full h-60 object-cover"
-              />
+              {isPageLoaded ? (
+                <img
+                  src={p.image}
+                  alt={p.title}
+                  loading="lazy"
+                  className="w-full h-60 object-cover"
+                />
+              ) : (
+                <div className="w-full h-60 bg-gray-200 dark:bg-gray-700 animate-pulse" />
+              )}
               <div className="p-6 text-center">
                 <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
                   {p.title}
@@ -104,6 +108,7 @@ const ProductsPage = () => {
           <img
             src={products[selectedIndex].image}
             alt={products[selectedIndex].title}
+            loading="lazy"
             className="max-h-[85%] max-w-[85%] rounded-2xl shadow-2xl border-4 border-white/30"
           />
 
