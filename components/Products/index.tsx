@@ -27,12 +27,15 @@ const products: Product[] = [
   { id: 13, image: "/images/server-monitoring.png", title: "Server Monitoring", desc: "Realtime server monitoring.", category: "app" },
   { id: 14, image: "/images/grup-rumah-makan-monitoring.png", title: "Restaurant Group Monitoring", desc: "Outlet monitoring.", category: "app" },
   { id: 15, image: "/images/grup-toko-monitoring.png", title: "Retail Store Monitoring", desc: "Monitoring system.", category: "app" },
+  { id: 16, image: "/images/aplication-visitor.png", title: "Visitor App — Check-in", desc: "Visitor registration with QR check-in and log history.", category: "app" },
+  { id: 17, image: "/images/access-room-meeting.png", title: "Meeting Room Access", desc: "Room booking and QR-based access control.", category: "app" },
+  { id: 18, image: "/images/monitoring-hikvision-access.png", title: "Hikvision Door Monitoring", desc: "Realtime door access monitoring with logs and snapshots.", category: "app" },
 ];
 
 const categories = [
+  { key: "app", label: "App" },
   { key: "dashboard", label: "Dashboard" },
   { key: "company", label: "Company Profile" },
-  { key: "app", label: "App" },
   { key: "other", label: "Other" },
 ] as const;
 
