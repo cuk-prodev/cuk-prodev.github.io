@@ -5,6 +5,7 @@ import Contact from "../components/Contact";
 import ScrollUp from "../components/Common/ScrollUp";
 import Head from "./head";
 import ProductsPage from "@/components/Products";
+import Pricing from "@/components/Pricing";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
         <Features />
         <About />
         <ProductsPage />
+        <Pricing />
         <Contact />
       </main>
     </>

@@ -7,6 +7,7 @@ import Contact from "../components/Contact";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
 import ProductsPage from "@/components/Products";
+import Pricing from "@/components/Pricing";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Features />
         <About />
         <ProductsPage />
+        <Pricing />
         <Contact />
       </main>
     </>
