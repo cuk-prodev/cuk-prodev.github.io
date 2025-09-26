@@ -6,6 +6,7 @@ import ScrollUp from "../components/Common/ScrollUp";
 import Head from "./head";
 import ProductsPage from "@/components/Products";
 import Pricing from "@/components/Pricing";
+import SeoGoogle from "./site/seo/page";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
         <ProductsPage />
         <Pricing />
         <Contact />
+        {/* <SeoGoogle /> */}
       </main>
     </>
     
