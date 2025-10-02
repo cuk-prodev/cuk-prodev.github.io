@@ -27,7 +27,7 @@ const About = () => {
                   Let’s bring your idea to life with clean, modern, and powerful apps.
                 </p>
                 <Link
-                  href="https://wa.me/6289669660673?text=Halo%20saya%20tertarik%20untuk%20membuat%20aplikasi%20untuk%20bisnis%20saya"
+                  href="https://wa.me/6281289784331?text=Halo%20saya%20tertarik%20untuk%20membuat%20aplikasi%20untuk%20bisnis%20saya"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
                   Know More
