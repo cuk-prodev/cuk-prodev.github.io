@@ -9,8 +9,12 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import PreLoader from "../components/Common/PreLoader";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+import { blockInspect } from "./types/blockInspect";
+import Swal from "sweetalert2";
+import axios from "axios";
+import { Chart, registerables } from "chart.js";
+import { setupAxios } from "./types/setupAxios";
 
 export default function RootLayout({
   children,
@@ -21,20 +25,47 @@ export default function RootLayout({
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 1000);
+
+    // setup axios & chart
+    setupAxios(axios);
+    Chart.register(...registerables);
+
+    // aktifkan blokir inspect
+    const inspector = blockInspect({
+      disableContextMenu: true,
+      disableDevToolsShortcut: true,
+      disableSelection: true,
+      disableCopy: true,
+      disableCut: true,
+      disablePaste: true,
+      allowedKeys: ["Ctrl+R", "Meta+R", "F5"],
+      onInspectAttempt: () => {
+        Swal.fire("⚠️ Warning", "Inspect attempt blocked!", "warning");
+      },
+      redirectOnInspect: "back",
+    });
+
+    // ✅ langsung deteksi pertama kali (antisipasi user udah buka DevTools sebelum load)
+    try {
+      if (inspector?.isDevToolsOpen?.()) {
+        Swal.fire("❌ Illegal Action", "DevTools terdeteksi!", "error").then(() => {
+          window.open("", "_self")?.close(); // coba close tab
+          window.location.href = "about:blank"; // fallback kalau ga bisa close
+        });
+      }
+    } catch (e) {
+      console.error("Inspector check failed:", e);
+    }
   }, []);
 
   return (
     <html suppressHydrationWarning={true} className="!scroll-smooth" lang="en">
       <title>CUK PRODEV - Jasa Website, Aplikasi, Sistem Digital</title>
-      <meta name="google-site-verification" content="NCNiHtize2Ll5bxpGesyEebKLH5TgTaP-gE5IDGNL8M" />
-      <meta name="google-site-verification" content="NCNiHtize2Ll5bxpGesyEebKLH5TgTaP-gE5IDGNL8M" />
-      <meta name="description" content="CUK PRODEV menyediakan jasa pembuatan website, aplikasi Android, dan sistem digital seperti absensi, booking room, dan dashboard IoT." />
-      <meta name="keywords" content="jasa pembuatan website, jasa pembuatan aplikasi Android, jasa website murah, freelancer IT, jasa pembuatan sistem absensi, jasa aplikasi IoT, web developer Jakarta, jasa React Native, developer GitHub Pages, jasa dashboard admin, jasa integrasi API, programmer freelance" />
+      <meta
+        name="description"
+        content="CUK PRODEV menyediakan jasa pembuatan website, aplikasi Android, dan sistem digital seperti absensi, booking room, dan dashboard IoT."
+      />
       <meta name="author" content="CUK PRODEV" />
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
 
       <body>
@@ -42,11 +73,7 @@ export default function RootLayout({
           <PreLoader />
         ) : (
           <SessionProvider>
-            <ThemeProvider
-              attribute="class"
-              enableSystem={false}
-              defaultTheme="light"
-            >
+            <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
               <ToasterContext />
               <Header />
               {children}

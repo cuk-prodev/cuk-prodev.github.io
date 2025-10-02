@@ -10,13 +10,36 @@ type Product = {
   category: "dashboard" | "company" | "app" | "other";
 };
 
+// const products: Product[] = [
+//   // ==== contoh kategori ====
+//   { id: 1, image: "/images/medsos.png", title: "Social Media App", desc: "A modern social platform.", category: "app" },
+//   { id: 21, image: "/images/market.png", title: "Marketplace App", desc: "An elegant marketplace.", category: "app" },
+//   { id: 19, image: "/images/kasir.png", title: "POS System", desc: "A powerful cashier system.", category: "app" },
+//   { id: 4, image: "/images/g-ride.png", title: "G-Ride", desc: "Reliable transportation app.", category: "app" },
+//   { id: 20, image: "/images/parkir.png", title: "Smart Parking", desc: "Complete smart parking.", category: "app" },
+//   { id: 6, image: "/images/tour.png", title: "Travel APP", desc: "Choose destination easily.", category: "app" },
+//   { id: 7, image: "/images/sanjaya.png", title: "Booking System", desc: "Real estate website.", category: "company" },
+//   { id: 8, image: "/images/hris_dashboard.png", title: "HRIS Dashboard", desc: "Comprehensive HR dashboard.", category: "dashboard" },
+//   { id: 9, image: "/images/damia.png", title: "Attendance Report HRIS", desc: "Manage employee attendance.", category: "dashboard" },
+//   { id: 10, image: "/images/hris.png", title: "HRIS Login", desc: "Secure HRIS login system.", category: "dashboard" },
+//   { id: 11, image: "/images/barugasikola.png", title: "E-Learning & Medsos Barugasikola", desc: "Online learning & medsos platform.", category: "other" },
+//   { id: 12, image: "/images/kingfruit.png", title: "King of The King Marketplace", desc: "Premium durian website.", category: "company" },
+//   { id: 13, image: "/images/server-monitoring.png", title: "Server Monitoring", desc: "Realtime server monitoring.", category: "app" },
+//   { id: 14, image: "/images/grup-rumah-makan-monitoring.png", title: "Restaurant Group Monitoring", desc: "Outlet monitoring.", category: "app" },
+//   { id: 15, image: "/images/grup-toko-monitoring.png", title: "Retail Store Monitoring", desc: "Monitoring system.", category: "app" },
+//   { id: 16, image: "/images/aplication-visitor.png", title: "Visitor App — Check-in", desc: "Visitor registration with QR check-in and log history.", category: "app" },
+//   { id: 17, image: "/images/access-room-meeting.png", title: "Meeting Room Access", desc: "Room booking and QR-based access control.", category: "app" },
+//   { id: 18, image: "/images/monitoring-hikvision-access.png", title: "Hikvision Door Monitoring", desc: "Realtime door access monitoring with logs and snapshots.", category: "app" },
+//   { id: 2, image: "/images/jasa-kirim.png", title: "Tracking Delivery App", desc: "Track shipments with detailed timeline and realtime map.", category: "app" },
+//   { id: 4, image: "/images/pinjaman-bank-transaksi.png", title: "Bank Loan Transaction Dashboard", desc: "Monitor balance, installments, and loan transaction history.", category: "app" },
+//   { id: 5, image: "/images/pinjaman-bank.png", title: "Bank Loan Application", desc: "Apply for loans online with flexible limits and tenors.", category: "app" },
+// ];
 const products: Product[] = [
-  // ==== contoh kategori ====
-  { id: 1, image: "/images/medsos.png", title: "Social Media App", desc: "A modern social platform.", category: "app" },
-  { id: 2, image: "/images/market.png", title: "Marketplace App", desc: "An elegant marketplace.", category: "app" },
-  { id: 3, image: "/images/kasir.png", title: "POS System", desc: "A powerful cashier system.", category: "app" },
+  { id: 1, image: "/images/aplication-visitor.png", title: "Visitor App — Check-in", desc: "Visitor registration with QR check-in and log history.", category: "app" },
+  { id: 2, image: "/images/jasa-kirim.png", title: "Tracking Delivery App", desc: "Track shipments with detailed timeline and realtime map.", category: "app" },
   { id: 4, image: "/images/g-ride.png", title: "G-Ride", desc: "Reliable transportation app.", category: "app" },
-  { id: 5, image: "/images/parkir.png", title: "Smart Parking", desc: "Complete smart parking.", category: "app" },
+  { id: 4, image: "/images/pinjaman-bank-transaksi.png", title: "Bank Loan Transaction Dashboard", desc: "Monitor balance, installments, and loan transaction history.", category: "app" },
+  { id: 5, image: "/images/pinjaman-bank.png", title: "Bank Loan Application", desc: "Apply for loans online with flexible limits and tenors.", category: "app" },
   { id: 6, image: "/images/tour.png", title: "Travel APP", desc: "Choose destination easily.", category: "app" },
   { id: 7, image: "/images/sanjaya.png", title: "Booking System", desc: "Real estate website.", category: "company" },
   { id: 8, image: "/images/hris_dashboard.png", title: "HRIS Dashboard", desc: "Comprehensive HR dashboard.", category: "dashboard" },
@@ -27,10 +50,14 @@ const products: Product[] = [
   { id: 13, image: "/images/server-monitoring.png", title: "Server Monitoring", desc: "Realtime server monitoring.", category: "app" },
   { id: 14, image: "/images/grup-rumah-makan-monitoring.png", title: "Restaurant Group Monitoring", desc: "Outlet monitoring.", category: "app" },
   { id: 15, image: "/images/grup-toko-monitoring.png", title: "Retail Store Monitoring", desc: "Monitoring system.", category: "app" },
-  { id: 16, image: "/images/aplication-visitor.png", title: "Visitor App — Check-in", desc: "Visitor registration with QR check-in and log history.", category: "app" },
+  { id: 16, image: "/images/medsos.png", title: "Social Media App", desc: "A modern social platform.", category: "app" },
   { id: 17, image: "/images/access-room-meeting.png", title: "Meeting Room Access", desc: "Room booking and QR-based access control.", category: "app" },
   { id: 18, image: "/images/monitoring-hikvision-access.png", title: "Hikvision Door Monitoring", desc: "Realtime door access monitoring with logs and snapshots.", category: "app" },
+  { id: 19, image: "/images/kasir.png", title: "POS System", desc: "A powerful cashier system.", category: "app" },
+  { id: 20, image: "/images/parkir.png", title: "Smart Parking", desc: "Complete smart parking.", category: "app" },
+  { id: 21, image: "/images/market.png", title: "Marketplace App", desc: "An elegant marketplace.", category: "app" },
 ];
+
 
 const categories = [
   { key: "app", label: "App" },
@@ -47,7 +74,7 @@ const ProductsPage = () => {
 
   // tab dan pagination
   const [activeCategory, setActiveCategory] =
-    useState<(typeof categories)[number]["key"]>("dashboard");
+    useState<(typeof categories)[number]["key"]>("app");
   const [pageByCat, setPageByCat] = useState<Record<string, number>>({});
 
   useEffect(() => {
