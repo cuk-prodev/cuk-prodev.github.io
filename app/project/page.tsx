@@ -7,7 +7,8 @@ import Hero from "../ceo/Hero";
 import Features from "@/components/Features";
 import About from "@/components/About";
 import ProductsPage from "@/components/Products";
-import Pricing from "@/components-in/Pricing";
+// import Pricing from "@/components-in/Pricing";
+import Pricing from "@/components/Pricing";
 
 export default function HomePage() {
   return (
