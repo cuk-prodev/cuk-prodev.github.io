@@ -3,6 +3,11 @@ import Contact from "../../components-in/Contact";
 import ScrollUp from "../../components-in/Common/ScrollUp";
 import Head from "../head";
 import Project from "@/components-in/Data/data/Project";
+import Hero from "../ceo/Hero";
+import Features from "@/components/Features";
+import About from "@/components/About";
+import ProductsPage from "@/components/Products";
+import Pricing from "@/components-in/Pricing";
 
 export default function HomePage() {
   return (
@@ -10,9 +15,11 @@ export default function HomePage() {
       <Head/>
      
       <main>
-        <ScrollUp />
-        <Project />
-        <Contact />
+        {/* <Hero /> */}
+        {/* <Features /> */}
+        <About />
+        <ProductsPage />
+        <Pricing />
       </main>
     </>
     
