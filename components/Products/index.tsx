@@ -37,7 +37,7 @@ type Product = {
 const products: Product[] = [
   { id: 1, image: "/images/aplication-visitor.png", title: "Visitor App — Check-in", desc: "Visitor registration with QR check-in and log history.", category: "app" },
   { id: 2, image: "/images/jasa-kirim.png", title: "Tracking Delivery App", desc: "Track shipments with detailed timeline and realtime map.", category: "app" },
-  { id: 4, image: "/images/g-ride.png", title: "G-Ride", desc: "Reliable transportation app.", category: "app" },
+  { id: 3, image: "/images/g-ride.png", title: "G-Ride", desc: "Reliable transportation app.", category: "app" },
   { id: 4, image: "/images/pinjaman-bank-transaksi.png", title: "Bank Loan Transaction Dashboard", desc: "Monitor balance, installments, and loan transaction history.", category: "app" },
   { id: 5, image: "/images/pinjaman-bank.png", title: "Bank Loan Application", desc: "Apply for loans online with flexible limits and tenors.", category: "app" },
   { id: 6, image: "/images/tour.png", title: "Travel APP", desc: "Choose destination easily.", category: "app" },
