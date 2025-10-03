@@ -15,7 +15,6 @@ const products: Product[] = [
   { id: 2, image: "/images/hris-dashboard.png", title: "HRIS Dashboard", desc: "Comprehensive HR dashboard.", category: "dashboard" },
   { id: 3, image: "/images/hris-laporan.png", title: "HRIS Report", desc: "Performance evaluation and reports.", category: "dashboard" },
   { id: 4, image: "/images/hris-penilaian.png", title: "HRIS Evaluation", desc: "Employee evaluation form & results.", category: "dashboard" },
-  { id: 5, image: "/images/hris.png", title: "HRIS Login", desc: "Secure HRIS login system.", category: "dashboard" },
   { id: 6, image: "/images/aplication-visitor.png", title: "Visitor App — Check-in", desc: "Visitor registration with QR check-in and log history.", category: "app" },
   { id: 7, image: "/images/jasa-kirim.png", title: "Tracking Delivery App", desc: "Track shipments with detailed timeline and realtime map.", category: "app" },
   { id: 8, image: "/images/g-ride.png", title: "G-Ride", desc: "Reliable transportation app.", category: "app" },
@@ -24,7 +23,7 @@ const products: Product[] = [
   { id: 11, image: "/images/tour.png", title: "Travel APP", desc: "Choose destination easily.", category: "app" },
   { id: 12, image: "/images/sanjaya.png", title: "Booking System", desc: "Real estate website.", category: "company" },
   { id: 13, image: "/images/barugasikola.png", title: "E-Learning & Medsos Barugasikola", desc: "Online learning & medsos platform.", category: "other" },
-  { id: 14, image: "/images/kingfruit.png", title: "King of The King Marketplace", desc: "Premium durian website.", category: "company" },
+  { id: 14, image: "/images/kingfruit.png", title: "King of The King Marketplace", desc: "Premium durian website.", category: "other" },
   { id: 15, image: "/images/server-monitoring.png", title: "Server Monitoring", desc: "Realtime server monitoring.", category: "app" },
   { id: 16, image: "/images/grup-rumah-makan-monitoring.png", title: "Restaurant Group Monitoring", desc: "Outlet monitoring.", category: "app" },
   { id: 17, image: "/images/grup-toko-monitoring.png", title: "Retail Store Monitoring", desc: "Monitoring system.", category: "app" },
@@ -34,8 +33,12 @@ const products: Product[] = [
   { id: 21, image: "/images/kasir.png", title: "POS System", desc: "A powerful cashier system.", category: "app" },
   { id: 22, image: "/images/parkir.png", title: "Smart Parking", desc: "Complete smart parking.", category: "app" },
   { id: 23, image: "/images/market.png", title: "Marketplace App", desc: "An elegant marketplace.", category: "app" },
-  { id: 24, image: "/images/damia.png", title: "Attendance Report HRIS", desc: "Manage employee attendance.", category: "dashboard" },
-  { id: 25, image: "/images/hris_dashboard.png", title: "HRIS Dashboard", desc: "Comprehensive HR dashboard.", category: "dashboard" },
+  { id: 26, image: "/images/finance-monitoring.png", title: "Finance & Accounting Dashboard", desc: "Monitor revenue, profit, cashflow & budget performance.", category: "dashboard" },
+  { id: 27, image: "/images/sustainability-dashboard.png", title: "Sustainability Dashboard", desc: "Monitor environmental, social & governance metrics for green compliance.", category: "dashboard" },
+  { id: 28, image: "/images/sales-monitoring.png", title: "Sales & Marketing Dashboard", desc: "Monitor sales pipeline, targets, leads & campaign performance.", category: "dashboard" },
+  { id: 29, image: "/images/hris.png", title: "HRIS Login", desc: "Secure HRIS login system.", category: "dashboard" },
+  { id: 30, image: "/images/damia.png", title: "Attendance Report HRIS", desc: "Manage employee attendance.", category: "dashboard" },
+  { id: 31, image: "/images/hris_dashboard.png", title: "HRIS Dashboard", desc: "Comprehensive HR dashboard.", category: "dashboard" },
 ];
 
 
