@@ -12,7 +12,7 @@ type Product = {
 
 const products: Product[] = [
   { id: 1, image: "/images/monitoring-bisnis.png", title: "Business Monitoring Dashboard", desc: "Executive dashboard for finance, operations, server & project status.", category: "dashboard" },
-  { id: 2, image: "/images/hris_dashboard.png", title: "HRIS Dashboard", desc: "Comprehensive HR dashboard.", category: "dashboard" },
+  { id: 2, image: "/images/hris-dashboard.png", title: "HRIS Dashboard", desc: "Comprehensive HR dashboard.", category: "dashboard" },
   { id: 3, image: "/images/hris-laporan.png", title: "HRIS Report", desc: "Performance evaluation and reports.", category: "dashboard" },
   { id: 4, image: "/images/hris-penilaian.png", title: "HRIS Evaluation", desc: "Employee evaluation form & results.", category: "dashboard" },
   { id: 5, image: "/images/hris.png", title: "HRIS Login", desc: "Secure HRIS login system.", category: "dashboard" },
