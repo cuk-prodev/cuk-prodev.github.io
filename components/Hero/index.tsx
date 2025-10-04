@@ -19,15 +19,42 @@ const Hero = () => {
                 Digital Solutions for Your Business
 
                 </h1> */}
-                <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  {/* Jasa Pembuatan Website, Aplikasi, dan Sistem Digital */}
+                {/* <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
                   Website, App, and Digital System Development Services
                 </h1>
 
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  {/* Kami menyediakan layanan pembuatan website profesional, aplikasi Android, serta sistem digital seperti absensi, dashboard IoT, dan booking room untuk kebutuhan bisnis Anda. */}
                   We provide professional website development, Android app creation, and custom digital systems such as attendance tracking, IoT dashboards, and room booking solutions tailored to your business needs.
+                </p> */}
+
+
+                {/* <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
+                  Website, App, Digital System & AI-Powered Business Analysis
+                </h1>
+
+                <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
+                  We provide professional website development, Android app creation, and custom digital systems 
+                  such as attendance tracking, IoT dashboards, and room booking solutions. 
+                  <span className="font-semibold text-red-300" style={{color:'#FFEB3B'}}> 
+                     Powered by AI, we also deliver smart business insights and predictive analysis 
+                    to help companies make data-driven decisions with confidence.
+                  </span>
+                </p> */}
+
+                <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
+                  <span style={{color:'#FFEB3B'}} > AI-Powered Business Analysis, </span> Website & Digital System Development
+                </h1>
+
+                <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
+                  <span className="font-semibold text-yellow-300" style={{color:'#FFEB3B', fontSize:'21px'}} >
+                    Our AI solutions deliver smart business insights and predictive analysis 
+                    to help companies make data-driven decisions with confidence.
+                  </span>{" "}
+                  In addition, we provide professional website development, Android app creation, 
+                  and custom digital systems such as attendance tracking, IoT dashboards, and room booking solutions.
                 </p>
+
+
                 {/* <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
                   Next.js SaaS Boilerplate and Starter Kit designed and built
                   for SaaS startups. It comes with all necessary integrations,

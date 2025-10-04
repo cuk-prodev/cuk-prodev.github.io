@@ -11,10 +11,17 @@ type Product = {
 };
 
 const products: Product[] = [
-  { id: 1, image: "/images/monitoring-bisnis.png", title: "Business Monitoring Dashboard", desc: "Executive dashboard for finance, operations, server & project status.", category: "dashboard" },
-  { id: 2, image: "/images/hris-dashboard.png", title: "HRIS Dashboard", desc: "Comprehensive HR dashboard.", category: "dashboard" },
-  { id: 3, image: "/images/hris-laporan.png", title: "HRIS Report", desc: "Performance evaluation and reports.", category: "dashboard" },
-  { id: 4, image: "/images/hris-penilaian.png", title: "HRIS Evaluation", desc: "Employee evaluation form & results.", category: "dashboard" },
+  { 
+    id: 1, 
+    image: "/images/AI-Dashboard-Analyst.png", 
+    title: "AI Analyst Dashboard", 
+    desc: "AI-powered insights & business dashboard with prediction analytics.", 
+    category: "app" 
+  },
+  { id: 2, image: "/images/monitoring-bisnis.png", title: "Business Monitoring Dashboard", desc: "Executive dashboard for finance, operations, server & project status.", category: "dashboard" },
+  { id: 3, image: "/images/hris-dashboard.png", title: "HRIS Dashboard", desc: "Comprehensive HR dashboard.", category: "dashboard" },
+  { id: 4, image: "/images/hris-laporan.png", title: "HRIS Report", desc: "Performance evaluation and reports.", category: "dashboard" },
+  { id: 5, image: "/images/hris-penilaian.png", title: "HRIS Evaluation", desc: "Employee evaluation form & results.", category: "dashboard" },
   { id: 6, image: "/images/aplication-visitor.png", title: "Visitor App — Check-in", desc: "Visitor registration with QR check-in and log history.", category: "app" },
   { id: 7, image: "/images/jasa-kirim.png", title: "Tracking Delivery App", desc: "Track shipments with detailed timeline and realtime map.", category: "app" },
   { id: 8, image: "/images/g-ride.png", title: "G-Ride", desc: "Reliable transportation app.", category: "app" },
@@ -33,6 +40,13 @@ const products: Product[] = [
   { id: 21, image: "/images/kasir.png", title: "POS System", desc: "A powerful cashier system.", category: "app" },
   { id: 22, image: "/images/parkir.png", title: "Smart Parking", desc: "Complete smart parking.", category: "app" },
   { id: 23, image: "/images/market.png", title: "Marketplace App", desc: "An elegant marketplace.", category: "app" },
+  { 
+    id: 25, 
+    image: "/images/AI-Dashboard-Analyst.png", 
+    title: "AI Analyst Dashboard", 
+    desc: "AI-powered insights & business dashboard with prediction analytics.", 
+    category: "dashboard" 
+  },
   { id: 26, image: "/images/finance-monitoring.png", title: "Finance & Accounting Dashboard", desc: "Monitor revenue, profit, cashflow & budget performance.", category: "dashboard" },
   { id: 27, image: "/images/sustainability-dashboard.png", title: "Sustainability Dashboard", desc: "Monitor environmental, social & governance metrics for green compliance.", category: "dashboard" },
   { id: 28, image: "/images/sales-monitoring.png", title: "Sales & Marketing Dashboard", desc: "Monitor sales pipeline, targets, leads & campaign performance.", category: "dashboard" },
