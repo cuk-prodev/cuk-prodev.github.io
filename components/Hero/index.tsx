@@ -46,7 +46,7 @@ const Hero = () => {
                 </h1>
 
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  <span className="font-semibold text-yellow-300" style={{color:'#FFEB3B', fontSize:'21px'}} >
+                  <span className="font-semibold text-white-300" style={{ fontSize:'21px'}} >
                     Our AI solutions deliver smart business insights and predictive analysis 
                     to help companies make data-driven decisions with confidence.
                   </span>{" "}
