@@ -1,9 +1,10 @@
-import Hero from "../../components-in/Hero";
-import Features from "../../components-in/Features";
-import About from "../../components-in/About";
-import Contact from "../../components-in/Contact";
-import ScrollUp from "../../components-in/Common/ScrollUp";
+import Hero from "../../components/Hero";
+import Features from "../../components/Features";
+import About from "../../components/About";
+import Contact from "../../components/Contact";
+import ScrollUp from "../../components/Common/ScrollUp";
 import Head from "../head";
+import ProductsPage from "@/components/Products";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
         <Hero />
         <Features />
         <About />
+        <ProductsPage/>
         <Contact />
       </main>
     </>

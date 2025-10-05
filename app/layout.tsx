@@ -45,17 +45,17 @@ export default function RootLayout({
     if (!isIOSSafari()) {
       try {
         const inspector = blockInspect({
-          disableContextMenu: true,
-          disableDevToolsShortcut: true,
-          disableSelection: true,
-          disableCopy: true,
-          disableCut: true,
-          disablePaste: true,
-          allowedKeys: ["Ctrl+R", "Meta+R", "F5"],
-          onInspectAttempt: () => {
-            Swal.fire("⚠️ Warning", "Inspect attempt blocked!", "warning");
-          },
-          redirectOnInspect: "back",
+          // disableContextMenu: true,
+          // disableDevToolsShortcut: true,
+          // disableSelection: true,
+          // disableCopy: true,
+          // disableCut: true,
+          // disablePaste: true,
+          // allowedKeys: ["Ctrl+R", "Meta+R", "F5"],
+          // onInspectAttempt: () => {
+          //   Swal.fire("⚠️ Warning", "Inspect attempt blocked!", "warning");
+          // },
+          // redirectOnInspect: "back",
         });
 
         if (inspector?.isDevToolsOpen?.()) {
@@ -73,39 +73,6 @@ export default function RootLayout({
     return () => clearTimeout(timer);
   }, []);
 
-  // useEffect(() => {
-  //   setTimeout(() => setLoading(false), 1000);
-
-  //   // setup axios & chart
-  //   setupAxios(axios);
-  //   Chart.register(...registerables);
-
-  //   // aktifkan blokir inspect
-  //   const inspector = blockInspect({
-  //     disableContextMenu: true,
-  //     disableDevToolsShortcut: true,
-  //     disableSelection: true,
-  //     disableCopy: true,
-  //     disableCut: true,
-  //     disablePaste: true,
-  //     allowedKeys: ["Ctrl+R", "Meta+R", "F5"],
-  //     onInspectAttempt: () => {
-  //       Swal.fire("⚠️ Warning", "Inspect attempt blocked!", "warning");
-  //     },
-  //     redirectOnInspect: "back",
-  //   });
-
-  //   try {
-  //     if (inspector?.isDevToolsOpen?.()) {
-  //       Swal.fire("❌ Illegal Action", "DevTools terdeteksi!", "error").then(() => {
-  //         window.open("", "_self")?.close(); 
-  //         window.location.href = "about:blank"; 
-  //       });
-  //     }
-  //   } catch (e) {
-  //     console.error("Inspector check failed:", e);
-  //   }
-  // }, []);
 
   
   return (
