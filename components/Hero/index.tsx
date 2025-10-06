@@ -262,10 +262,25 @@ const Hero = () => {
                     height={316}
                   />
                 </div> */}
-                <div
+                {/* <div
                   className="relative flex justify-center items-center h-[480px] select-none"
                   style={{ perspective: "1200px", marginTop: "150px", paddingLeft:'30px', paddingRight:'30px' }}
+                > */}
+                <div
+                  className="
+                    relative flex justify-center items-center select-none
+                    h-[480px] px-[30px]
+                    mt-[150px]
+                    max-[920px]:mt-[-100px]
+                    max-[920px]:w-[70%]
+                    max-[920px]:mx-auto
+                    max-[640px]:mt-[-100px]
+                    max-[640px]:w-[70%]
+                    max-[640px]:mx-auto
+                  "
+                  style={{ perspective: "1200px" }}
                 >
+
                   {images.map((src, index) => {
                     // cek ukuran layar
                     const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
