@@ -1,7 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 
 const Hero = () => {
+   const images = [
+    "/images/hero/hero-image.jpg",
+    "/images/hero/AI-analytics.png",
+    "/images/hero/AI-finance.png",
+  ];
+
+  const [activeIndex, setActiveIndex] = useState(1);
   return (
     <>
       <section
@@ -243,7 +253,7 @@ const Hero = () => {
                 className="wow fadeInUp relative z-10 mx-auto max-w-[845px]"
                 data-wow-delay=".25s"
               >
-                <div className="mt-16">
+                {/* <div className="mt-16">
                   <Image
                     src="/images/hero/hero-image.jpg"
                     alt="hero"
@@ -251,7 +261,64 @@ const Hero = () => {
                     width={845}
                     height={316}
                   />
+                </div> */}
+                <div
+                  className="relative flex justify-center items-center h-[480px] select-none"
+                  style={{ perspective: "1200px", marginTop: "150px", paddingLeft:'30px', paddingRight:'30px' }}
+                >
+                  {images.map((src, index) => {
+                    // cek ukuran layar
+                    const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
+                    // kalau mobile: offset kecil + tanpa 3D
+                    const offset = isMobile ? (index - activeIndex) * 40 : (index - activeIndex) * 160;
+
+                    return (
+                      <motion.div
+                        key={src}
+                        className="absolute cursor-pointer drop-shadow-2xl"
+                        style={{
+                          zIndex: activeIndex === index ? 20 : 10 - Math.abs(index - activeIndex),
+                        }}
+                        initial={{ scale: 0.9, opacity: 0.5 }}
+                        animate={{
+                          x: offset,
+                          scale: activeIndex === index ? 1.05 : 0.9,
+                          opacity: activeIndex === index ? 1 : 0.5,
+                          rotateY: isMobile ? 0 : (index - activeIndex) * -25,
+                          rotateZ: isMobile ? 0 : (index - activeIndex) * 2,
+                          filter: activeIndex === index
+                            ? "drop-shadow(0 10px 20px rgba(0,0,0,0.5))"
+                            : "blur(2px)",
+                        }}
+                        whileHover={
+                          isMobile
+                            ? {} // nggak usah hover di HP
+                            : {
+                                scale: 1.15,
+                                zIndex: 25,
+                                rotateY: 0,
+                                transition: { duration: 0.4 },
+                              }
+                        }
+                        transition={{ type: "spring", stiffness: 180, damping: 18 }}
+                        onClick={() => setActiveIndex(index)}
+                      >
+                        <Image
+                          src={src}
+                          alt={`hero-stack-${index}`}
+                          width={isMobile ? 320 : 860}
+                          height={isMobile ? 200 : 340}
+                          className="rounded-2xl border border-gray-600 shadow-[0_20px_40px_rgba(0,0,0,0.4)] bg-black/20 backdrop-blur-sm"
+                        />
+                      </motion.div>
+                    );
+                  })}
+
+                  {/* subtle background glow */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent blur-2xl pointer-events-none"></div>
                 </div>
+
                 <div className="absolute -left-9 bottom-0 z-[-1]">
                   <svg
                     width="134"
