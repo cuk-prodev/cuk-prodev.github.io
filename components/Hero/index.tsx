@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
    const images = [
@@ -12,6 +12,21 @@ const Hero = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // set awal
+    handleResize();
+
+    // update tiap resize
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  
   return (
     <>
       <section
@@ -271,7 +286,7 @@ const Hero = () => {
                     relative flex justify-center items-center select-none
                     h-[480px] px-[30px]
                     mt-[150px]
-                    max-[920px]:mt-[-100px]
+                    max-[920px]:mt-[-50px]
                     max-[920px]:w-[70%]
                     max-[920px]:mx-auto
                     max-[640px]:mt-[-100px]
@@ -906,6 +921,11 @@ const Hero = () => {
                 </div>
                 <div className="absolute -right-6 -top-6 z-[-1]">
                   <svg
+                    // width="134"
+                    // height="106"
+                    // viewBox="0 0 134 106"
+                    // fill="none"
+                    className="hidden md:block"
                     width="134"
                     height="106"
                     viewBox="0 0 134 106"
