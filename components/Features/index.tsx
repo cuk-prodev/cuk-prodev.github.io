@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { Shield, Layout, Layers, PlugZap } from "lucide-react";
+import { Shield, Layout, Layers, PlugZap, Cpu, FileText } from "lucide-react";
 
 const Features = () => {
   const featuresData = [
@@ -31,6 +31,20 @@ const Features = () => {
       title: "All Essential Integrations",
       description:
         "Connected with tools that matter. Integrated with essential services like Google Login, payment gateways, email notifications, API layers, and more. Enable what you need and get going fast. Spend less time wiring things up, and more time building your product.",
+    },
+    {
+      id: 5,
+      icon: Cpu,
+      title: "AI Support Dashboard",
+      description:
+        "Monitor AI performance and insights in real-time. Get actionable recommendations, alerts, and visualize key metrics. Perfect for teams looking to leverage AI efficiently without manual tracking.",
+    },
+    {
+      id: 6,
+      icon: FileText,
+      title: "Decision Reference",
+      description:
+        "AI-assisted decision making with data-backed references. Helps managers and teams make informed choices quickly, with suggested actions based on historical data and predictive analytics.",
     },
   ];
 
@@ -95,6 +109,23 @@ const Features = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Space for example video */}
+        <div className="mt-16 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">
+            Example Video
+          </h3>
+          <div className="w-full md:w-2/3 mx-auto aspect-video rounded-xl overflow-hidden">
+            <video
+              src="/cuk 3-1_Clip.mp4"
+              controls
+              controlsList="nodownload"
+              className="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+        </div>
+
+
       </div>
     </section>
   );
