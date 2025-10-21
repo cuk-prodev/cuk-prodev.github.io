@@ -67,16 +67,14 @@ const Hero = () => {
                 </p> */}
 
                 <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  <span style={{color:'#FFEB3B'}} > AI-Powered Business Analysis, </span> Website & Digital System Development
+                  <span style={{color:'#FFEB3B'}} > Smart AI Agents — </span>  The Next Developer of the Future
                 </h1>
 
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
                   <span className="font-semibold text-white-300" style={{ fontSize:'21px'}} >
-                    Our AI solutions deliver smart business insights and predictive analysis 
-                    to help companies make data-driven decisions with confidence.
+                 Our Smart AI Agents are redefining the future of work — the next developer of the future that leads, builds, and operates entire companies autonomously. 
                   </span>{" "}
-                  In addition, we provide professional website development, Android app creation, 
-                  and custom digital systems such as attendance tracking, IoT dashboards, and room booking solutions.
+                  One pilot, infinite possibilities. Efficiency, speed, and intelligence combined into one powerful ecosystem.
                 </p>
 
 
